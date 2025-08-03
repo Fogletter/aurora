@@ -1,0 +1,83 @@
+/* 基础容器 */
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+}
+
+/* 轮播图 */
+.swiperContainer {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 功能导航区 */
+.featuresContainer {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 24px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.featureCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.featureIconContainer {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.featureIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featureTitle {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.featureDesc {
+  font-size: 20px;
+  line-height: 16px;
+  color: #6b7280;
+}

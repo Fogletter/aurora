@@ -1,0 +1,43 @@
+.container {
+    background-color: skyblue;
+    height: 100%;
+}
+.user {
+    background-color: #fff;
+    padding: 20px 16px;
+    display: flex;
+    align-items: center;
+}
+.nickname {
+    font-size: 36px;
+    font-weight: 500;
+}
+.level {
+    font-size: 28px;
+    color: #999;
+    margin-top: 8px;
+}
+.slogan {
+    font-size: 24px;
+    color: #ccc;
+    margin-top: 8px;
+}
+
+/* 添加生成头像遮罩层的样式 */
+.overlayContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #fff;
+}
+
+.loadingText {
+    margin-top: 10px;
+}
+
+.logoutButtonContainer {
+    margin-top: 16px;
+    padding: 0 16px;
+}

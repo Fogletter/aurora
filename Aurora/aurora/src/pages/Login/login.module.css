@@ -1,0 +1,66 @@
+.pageContainer {
+    width: 750px;
+    height: 1334px;
+    position: relative;
+    /* 为子元素绝对定位提供参照 */
+    margin: 0 auto;
+    /* 水平居中 */
+    background: linear-gradient(180deg, rgb(235, 189, 161) 0%, rgb(71, 49, 32) 100%);
+    /* 可选背景色 */
+}
+
+.form {
+    width: 80%;
+    /* 表单宽度 */
+    max-width: 500px;
+    /* 最大宽度限制 */
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    /* 居中魔法 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: medium;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: medium;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

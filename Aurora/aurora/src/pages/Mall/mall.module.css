@@ -1,0 +1,135 @@
+.container {
+    position: relative;
+    width: 750px;
+    min-height: 762px;
+    background-color: #f9fafb;
+}
+
+/* 主要内容区域 */
+.mainContent {
+    padding-bottom: 60px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 分类区域 */
+.categorySection {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 60px;
+}
+
+.categoryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryImage {
+    width: 70px;
+    height: 70px;
+    border-radius: 9999px;
+    object-fit: cover;
+    background-color: #f3f4f6;
+}
+
+.categoryTitle {
+    margin-top: 8px;
+    font-size: 27px;
+    line-height: 30px;
+    color: #4b5563;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+/* 商品列表 */
+.productSection {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.productTitle {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.productList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productCard {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.productImage {
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+}
+
+.productInfo {
+    padding: 16px;
+}
+
+.productName {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.productActions {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productPrice {
+    color: #ef4444;
+    font-weight: 600;
+    font-size: large;
+}
+
+.buyButton {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 27px;
+    line-height: 30px;
+    border-radius: 4px;
+}

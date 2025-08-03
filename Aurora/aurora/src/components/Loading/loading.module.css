@@ -1,0 +1,29 @@
+.wrapper>div {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: skyblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* 关键帧动画 */
+    /* animation-name 动画脚本 
+    animation-duration 持续时间
+    animation-iteration-count 执行次数
+    anmation-timing-function 运动速率 */
+    animation: loading 1.4s infinite ease-in;
+}
+.wrapper>div:nth-child(2) {
+    animation-delay: -0.7s;
+}
+@keyframes loading {
+    0%,100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
