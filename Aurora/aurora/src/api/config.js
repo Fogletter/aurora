@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = '/api'
+axios.defaults.baseURL = 'https://aurora-seven-pi.vercel.app/api'
 
 axios.interceptors.request.use((config) => {
     // token
