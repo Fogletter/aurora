@@ -6,8 +6,10 @@ import {
 import {
   useNavigate
 } from 'react-router-dom'
+import useTitle from '@/hooks/useTitle'
 
 const Mall = () => {
+  useTitle('音乐商城')
   const navigate = useNavigate()
   const {
     products,

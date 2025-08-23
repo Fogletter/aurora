@@ -5,8 +5,10 @@ import styles from './home.module.css';
 import {
   useNavigate
 } from 'react-router-dom';
+import useTitle from '@/hooks/useTitle'
 
 const Home = () => {
+  useTitle('首页')
   const navigate = useNavigate();
 
   const features = [

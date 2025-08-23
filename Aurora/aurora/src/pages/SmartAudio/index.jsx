@@ -3,8 +3,10 @@ import {
     useRef,
     useState
 } from 'react'
+import useTitle from '@/hooks/useTitle'
 
 const SmartAudio = () => {
+    useTitle('智能音频')
     const uploadUrl = 'https://api.coze.cn/v1/files/upload';
     const workflowUrl = 'https://api.coze.cn/v1/workflow/run';
     const workflow_id = '7533922894758871092';

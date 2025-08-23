@@ -9,8 +9,10 @@ import {
     useNavigate
 } from 'react-router-dom'
 import styles from './login.module.css'
+import useTitle from '@/hooks/useTitle'
 
 const Login = () => {
+    useTitle('登录')
     const usernameRef = useRef(null)
     const passwordRef = useRef(null)
     const navigate = useNavigate()

@@ -7,6 +7,7 @@ import {
     memo,
     useCallback
 } from 'react'
+import useTitle from '@/hooks/useTitle'
 
 const HotListItems = memo((props) => {
     const { hotList } = props
@@ -25,6 +26,7 @@ const HotListItems = memo((props) => {
 })
 
 const Search = () => {
+    useTitle('搜索')
     const [query, setQuery] = useState('')
     const {
         suggestList,
